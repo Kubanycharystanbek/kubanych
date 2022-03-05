@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio Kubanych</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="#home">Kubanych <span>Arystanbek</span></a>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                  </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#skills">My Skills</a>
+              </li>
+              <li>
+                <a href="#samples">Code Examples</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="#languages">Languages</a>
+              </li>
+              <li>
+                <a href="#education">Education</a>
+              </li>
+               <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h4>Hello, my name is</h4>
+            <h1><span>Kubanych</span></h1>
+            <h3>I'm a Web Developer</h3>
+            <div class="newslatter">
+                <form>
+                    <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                    <input type="submit" name="submit" value="Lets Stars">
+                </form>
+            </div>
+        </div>
+        <img src="image/Kubanych.JPG" alt="Kuba's photo" class="my-photo">
+    </header>
+    
+    <main>
+        <!--About section start-->
+        <div class="about" id="about">
+            <div class="main">
+                <img src="image/js-tricks.jpg" alt="Laptop's photo">
+                <div class="about-txt">
+                    <h2>About Me</h2>
+                    <h5>Web Developer</h5>
+                    <p>I am motivated, enthusiastic and well organised, with a keen eye for beautiful design, primarily based around user interfaces.</p>
+                    <a class="mail-to" href="mailto:kubanych.arystanbekuulu.kk@gmail.com">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+
+        <section id="skills" class="skills">
+          <div class="skill">
+            <h2>My Skills</h2>
+            <ul>
+              <li><h3>HTML</h3><span class="bar"><span class="html"></span></span></li>
+              <li><h3>CSS</h3><span class="bar"><span class="css"></span></span></li>
+              <li><h3>GIT, GITHUB</h3><span class="bar"><span class="git"></span></span></li>
+              <li><h3>ADOBE PHOTOSHOP</h3><span class="bar"><span class="photoshop"></span></span></li>
+              <li><h3>FIGMA</h3><span class="bar"><span class="figma"></span></span></li>
+            </ul>
+          </div>
+        </section>
+        <section class="samples" id="samples">
+          <h2>Code Samples</h2>
+          <p>HTML and CSS</p>
+          <pre><code>
+            a {
+              position: relative;
+              display: inline-block;
+              padding: 10px 15px;
+              margin: 40px 0;
+              color: #03e9f4;
+              font-size: 16px;
+              text-decoration: none;
+              overflow: hidden;
+              transition: 0.5s;
+              -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+          }
+          </code>
+          </pre>
+          <a class="mail-to" href="https://github.com/kubanycharystanbek">View more</a>
+        </section>
+      
+        <section class="portfolio" id="portfolio">
+          <h2>Portfolio</h2>
+            <ul>
+              <li>
+                <img src="image/design.png" alt="3d design">
+                <h3>Design your House</h3>
+                <a class="mail-to" href="https://kubanycharystanbek.github.io/website/" target="_blank">View more</a>
+              </li>
+              <li>
+                <img src="image/btnanimate.png" alt="Animation button photo">
+                <h3>Animation Button</h3>
+                <a class="mail-to" href="https://kubanycharystanbek.github.io/animation-button/" target="_blank">View more</a>
+              </li>
+            </ul>
+        </section>
+        <section class="languages" id="languages">
+          <h2>Languages</h2>
+          <ul>
+            <li><b>English</b> — Elementary</li>
+            <li><b>Deutsch</b> — B2</li>
+            <li><b>Russian</b> — Fluent</li>
+            <li><b>Kyrgyz</b> — Native</li>
+          </ul>
+        </section>
+        <section class="education" id="education">
+          <h2>Education</h2>  
+            <ul>
+              <li>Professional lyceum №93; </li>
+              <li>Kyrgyz State University of Construction, Transport and Architecture.</li>
+            </ul>
+        </section>
+        <section class="contact" id="contact">
+          <h2>Contact Me</h2>
+            <div class="contact-us">
+                <div class="form">
+                    <div>
+                        <h4>Write To Me</h4>
+                        <form id="contact" action="#" method="post" name="contact">
+                        <input id="name" class="txt" name="name" type="name" placeholder="Name">
+                        <input id="phone" class="txt" name="phone" type="phone" placeholder="Phone Number"> 
+                        <input id="email" class="txt" name="email" type="email" placeholder="E-mail"> 
+                        <textarea id="msg" class="txtarea" name="msg" placeholder="Your message"></textarea> <br>
+                        <input type="submit" name="submit" value="Send" class="mail-to">
+                        </form>
+                    </div>
+                    <div class="icons-sm">
+                        <ul class="contact-btn">
+                            <li class="icons"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                            <li class="icons"><a href="mailto:kubanych.arystanbekuulu.kk@gmail.com"><i class="fab fa-google"></i></a></li>
+                            <li icons><a href="https://github.com/kubanycharystanbek"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </main>
+      <footer>
+        <p class="end">2022 &copy; Kubanych Arystanbek uulu</p>
+        <a href="https://linktr.ee/jyldyzacademy2020">Jyldyz Academy </a>
+        <div class="social">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/kubanycharystanbek"><i class="fab fa-github"></i></a>
+            <a href="mailto:kubanych.arystanbekuulu.kk@gmail.com"><i class="fab fa-google"></i></a>
+
+        </div>
+      </footer>
+</body>
+</html>
