@@ -5,6 +5,10 @@
     box-sizing: border-box;
     color: #000;
 }
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
 
 header {
     height: 100vh;
@@ -26,6 +30,9 @@ nav {
     letter-spacing: 1px;
     cursor: pointer;
     text-decoration: none;
+}
+.menu-toggle {
+    display: none;
 }
 
 span {
@@ -67,11 +74,9 @@ nav ul li a:hover {
 }
 
 .content {
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
-    margin-top: 45px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
 }
 
 h1 {
@@ -116,7 +121,6 @@ h4 {
 .my-photo {
     width: 350px;
     min-height: 350px;
-    margin-left: 950px;
     margin-top: 150px;
     border: 2px solid #2103ce;
 }
@@ -521,4 +525,287 @@ footer a:hover {
 .social a:hover {
     transform: scale(1.3);
     transition: .3s;
+}
+
+
+@media only screen and (max-width:850px) {
+   .container {
+        max-width: 650px; 
+    }
+    .navbar {
+        position: relative;
+        margin-bottom: 120px;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    .nav-links {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        margin: 0;
+        padding: 15px 15px;
+        background-color: #000;
+        width: 100%;
+        top: 85px;
+        right: 0;
+    }
+    .menu-links li {
+        padding: 10px 0;
+    }
+
+    .menu-links li a {
+        font-weight: 400;
+    }
+
+    .fa-bars {
+        font-size: 20px;
+        color: #2103ce;
+        padding: 5px 8px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .btn {
+       display: none;
+    }
+    .newslatter form {
+        width: 200px;
+        max-width: 100%;
+        position: relative;
+    }
+    .newslatter form input:first-child {
+        display: inline-block;
+        width: 100%;
+        padding: 5px 4px 5px 6px;
+        border: 2px solid #2103ce;
+        outline: none;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+    .newslatter form input:last-child {
+        position: absolute;
+        display: inline-block;
+        outline: none;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 8px;
+        background-color: #9c90e1;
+        color: white;
+        box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+        top: 2px;
+        right: 2px;
+        font-size: 12px;
+    }
+    .content {
+        display: inline;
+    }
+    .content-inner {
+        margin-left: 120px;
+    }
+    .content h4 {
+        font-size: 14px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+    .content h3 {
+        font-size: 18px;
+    }
+
+    .my-photo {
+        width: 200px;
+        min-height: 200px;
+        margin-top: 50px;
+        margin-left: 120px;
+    }
+    .about {
+        padding-top: 50px;
+    }
+    .main {
+        display: inline;
+        margin:  25px 25px;
+    }
+    .about img {
+        width: 180px;
+        margin-left: 130px;
+    }
+
+    .main h2 {
+        font-size: 20px;
+        margin-left: 200px;
+        margin-top: 50px;
+    }
+
+    .main h5 {
+        font-size: 16px;
+        margin-left: 110px;
+    }
+
+    .main p {
+        max-width: 450px;
+        font-size: 14px;
+        margin: 25px 25px;
+        letter-spacing: normal;
+    }
+
+    .mail-to {
+        border: 1px solid  #2103ce;
+        background-color: #191919;
+        margin-left: 200px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .skill {
+        margin: 0 auto;
+        width: 450px;
+        margin-top: 50px;
+    }
+    .skill h2 {
+        font-size: 20px;
+        margin-left: -30px;
+    }
+
+    .skill h3 {
+        font-size: 14px;
+    }
+
+    .bar {
+        background-color: #353b48;
+        display: block;
+        height: 4px;
+        border: 1px solid rgba(238, 74, 74, 0.3);
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 0 10px #2103ce;
+    }
+
+    .bar span {
+        height: 2px;
+        float: left;
+        background: #2103ce;
+    }
+
+    .samples h2 {
+        font-size: 20px;
+    }
+    .samples p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .samples pre code {
+        font-size: 12px;
+    }
+
+    .samples .mail-to {
+        margin-left: 140px;
+        font-size: 14px;
+    }
+
+    .portfolio h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .portfolio ul {
+        display: inline;
+    }
+    .portfolio ul li:last-child{
+        margin-top: 50px;
+    }
+    .portfolio ul h3 {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .portfolio ul .mail-to {
+        margin-bottom: 0px;
+        margin-left: 150px;
+        background-color: #2103ce;
+    }
+    .languages {
+        padding-bottom: 20px;
+    }
+    .languages h2 {
+        font-size: 20px;
+    }
+    .languages ul li {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .education {
+        padding-bottom: 20px;
+    }
+    .education h2 {
+        font-size: 20px;
+    }
+
+    .education ul li {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .contact {
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+    }
+    .contact h2 {
+        font-size: 20px;
+    }
+
+    .contact h4 {
+        font-size: 16px;
+        letter-spacing: normal;
+    }
+
+    .form {
+        display: inline;
+    }
+
+    .form input {
+        font-size: 14px;
+        height: 30px;
+    }
+    .form textarea {
+        font-size: 14px;
+        width: 384px;
+        margin-bottom: 10px;
+    }
+
+    .form .mail-to {
+        padding: 8px 20px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        margin-left: 160px;
+    }
+   
+    .icons-sm i {
+        display: none;
+    }
+    .footer {
+        display: block;
+    }
+    footer p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    footer a {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .social a i {
+        font-size: 12px;
+    }
+    .social a {
+        width: 18px;
+        height: 18px;
+    }
+    .social a+a {
+        margin-left: 25px;
+    }
 }
